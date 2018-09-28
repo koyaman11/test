@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="パッケージ &apos;testprosect01&apos; を &apos;testprosect01&apos; に移動&#x0D;&#x0A;- 元のプロジェクト: &apos;person&apos;&#x0D;&#x0A;- 宛先要素: &apos;testprosect01&apos;&#x0D;&#x0A;- オリジナル要素: &apos;person/testprosect01&apos;&#x0D;&#x0A;- リファクタリングされた要素の参照を更新" description="パッケージを移動" destination="=testprosect01" element1="/&lt;testprosect01" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1538100761256" version="1.0"/>
+</session>
