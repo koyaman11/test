@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <HelloJSP1<d></d>HelloJSP1&lt;diHelloJSP1&lt;disHelloJSP1&lt;dispHelloJSP1&lt;displHelloJSP1&lt;displaHelloJSP1&lt;displayHelloJSP1&lt;display-HelloJSP1&lt;display-nHelloJSP1&lt;display-naHelloJSP1&lt;display-namHelloJSP1&lt;display-nameHelloJSP1&lt;display-name&gt;HelloJSP1&lt;display-name&gt;>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <display-name>HelloJSP</display-name>
+  </welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+</web-app>
