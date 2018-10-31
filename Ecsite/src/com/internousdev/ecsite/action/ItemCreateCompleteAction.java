@@ -16,12 +16,17 @@ public class ItemCreateCompleteAction extends ActionSupport implements SessionAw
 	private Map<String,Object> session;
 	private ItemCreateCompleteDAO itemCreateCompleteDAO=new ItemCreateCompleteDAO();
 
-	public String execte() throws SQLException{
-
-		itemCreateCompleteDAO.cerateInfo(session.get("itemName").toString(),
+	public String execute() throws SQLException{
+		String result=ERROR;//1件でも入ってなかったらエラー
+		int count = 0;
+		count = itemCreateCompleteDAO.cerateInfo(session.get("itemName").toString(),
 				session.get("itemPrice").toString(),
 				session.get("itemStock").toString());
-		String result=SUCCESS;
+		if(count > 0) {
+			result=SUCCESS;//一軒でも入ってたらサクセスする
+		}
+
+
 		return result;
 	}
 public String getItemName(){

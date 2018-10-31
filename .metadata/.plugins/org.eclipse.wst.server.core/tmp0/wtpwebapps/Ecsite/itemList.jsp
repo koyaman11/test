@@ -83,7 +83,7 @@ text-align:center;
 <th>個数</th>
 <th>登録日</th>
 </tr>
-<s:iterator value="itemList">
+<s:iterator value="itemListDTO">
 <tr>
 <td><s:property value="itemName"/></td>
 <td><s:property value="itemPrice"/><span>円</span></td>

@@ -48,18 +48,7 @@ text-align:center;
 }
 
 
-#box{
 
-wigth:60px;
-hight:60px;
-padding:0.5em 1em;
-margin:2em 0;
-font-weight: bold;
-color:#6091d3;/*文字色*/
-background:#FFF;
-border:solid 3px #6091d3; /*線*/
-border-radius: 10px; /*角野丸み*/
-}
 
 
 
@@ -73,7 +62,18 @@ clear:both;
 #text-center{
 displey:inline-block;
 text-align:center;
+wigth:60px;
+hight:60px;
+padding:0.5em 1em;
+margin:2em 0;
+font-weight: bold;
+color:#6091d3;/*文字色*/
+background:#FFF;
+border:solid 3px #6091d3; /*線*/
+border-radius: 10px; /*角野丸み*/
 }
+</style>
+
 <script type="text/javascript">
   function submitAction(url){
    $('form').attr('action',url);
@@ -81,7 +81,6 @@ text-align:center;
 }
 </script>
 
-</style>
 </head>
 <body>
 
@@ -96,18 +95,27 @@ text-align:center;
 <div>
 
 <div id="text-center">
-<div id="box">
-<p>商品</p>
-<p><input type="button" value="新規登録" onclick="submitAction('ItemCreateAction')"/><p>
-<p><input type="button" value="ユーザー" onclick="submitAction('ItemListAction')"/><p>
-</div></div>
+<tr>
+ <td>商品</td>
+ <td><s:form action="ItemCreateAction">
+ <s:submit value="新規登録"/>
+ </s:form></td>
+
+ <td><s:form action="ItemListAction">
+ <s:submit value="一覧"/>
+ </s:form></td>
+</tr>
+</div>
 
 <div id="text-center">
-<div id="box">
 <p>ユーザー</p>
-<p><input type="button" value="新規登録" onclick="submitAction('UserCreateAction')"/><p>
-<p><input type="button" value="ユーザー" onclick="submitAction('UserListAction')"/><p>
-</div>
+<p><s:form action="UserCreateAction">
+ <s:submit value="新規登録"/>
+ </s:form><p>
+<p><s:form action="UserListAction">
+ <s:submit value="一覧"/>
+ </s:form><p>
+
 </div>
 
 

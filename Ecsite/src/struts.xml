@@ -99,10 +99,11 @@
 <action name="ItemCreateCompleteAction" class="com.internousdev.ecsite.action.ItemCreateCompleteAction"
  method="execute">
  <result name="success">itemCreateComplete.jsp</result>
+ <result name="error">itemCreateConfirm.jsp</result>
  </action>
 
 <!-- item一覧↓ -->
- <action name="ItemListeAction" class="com.internousdev.ecsite.action.ItemListAction"
+ <action name="ItemListAction" class="com.internousdev.ecsite.action.ItemListAction"
  method="execute">
  <result name="success">itemList.jsp</result>
  </action>
@@ -115,6 +116,13 @@
  <action name="ItemListDeleteCompleteAction" class="com.internousdev.ecsite.action.ItemListDeleteCompleteAction"
  method="execute">
  <result name="success">itemListDeleteComplete.jsp</result>
+ </action>
+
+
+<!-- ﾕｰｻﾞｰ一覧 -->
+ <action name="UserListAction" class="com.internousdev.ecsite.action.UserListAction"
+ method="execute">
+ <result name="success">userList.jsp</result>
  </action>
 
 

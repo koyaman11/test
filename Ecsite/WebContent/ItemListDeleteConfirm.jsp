@@ -10,6 +10,7 @@
 <meta http-equiv="imagetoolbar" content="no">
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <title>itemListCreate画面</title>
 
 <style type="text/css">
@@ -58,6 +59,7 @@ clear:both;
 displey:inline-block;
 text-align:center;
 }
+</style>
 
 <script type="text/javascript">
   function submitAction(url){
@@ -66,7 +68,6 @@ text-align:center;
 }
 </script>
 
-</style>
 </head>
 <body>
 
@@ -79,13 +80,14 @@ text-align:center;
 <p>ItemListCreate</p>
 </div>
 
-<form>
+<s:form>
 <tr>
-<td>登録内容を消去しますか</td>
-<td><input type="button" value="戻る" onclick="submitAction('ItemListAction')"/></td>
-<td><input type="button" value="消去" onclick="submitAction('ItemListCreateAction')"/></td>
+ <td><h2>登録内容を消去しますか</h2></td>
+ <td><br></td>
+ <td><input type="button" value="戻る" onclick="submitAction('ItemListAction')"/></td>
+ <td><input type="button" value="消去" onclick="submitAction('ItemListDeleteCompleteAction')"/></td>
 </tr>
-</form>
+</s:form>
 </div>
 
 <div id="footer">

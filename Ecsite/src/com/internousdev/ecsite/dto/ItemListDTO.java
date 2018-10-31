@@ -2,8 +2,8 @@ package com.internousdev.ecsite.dto;
 
 public class ItemListDTO {
 	public String itemName;
-	public String itemPrice;
-	public String itemStock;
+	public int itemPrice;
+	public int itemStock;
 	public String insert_date;
 	public String userName;
 	public String id;
@@ -15,16 +15,16 @@ public class ItemListDTO {
 	public void setItemName(String itemName){
 		this.itemName=itemName;
 	}
-	public String getItemPrice(){
-		return itemName;
+	public int getItemPrice(){
+		return itemPrice;
 	}
-	public void setItemPrice(String itemPrice){
+	public void setItemPrice(int itemPrice){
 		this.itemPrice=itemPrice;
 	}
-	public String getItemStock(){
+	public int getItemStock(){
 		return itemStock;
 	}
-	public void setItemStock(String itemStock){
+	public void setItemStock(int itemStock){
 		this.itemStock=itemStock;
 	}
 	public String getInsert_date(){

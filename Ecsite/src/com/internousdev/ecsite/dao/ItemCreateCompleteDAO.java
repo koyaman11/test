@@ -14,8 +14,9 @@ public class ItemCreateCompleteDAO {
 
 	private String sql="INSERT INTO item_info_transaction(item_name,item_price,item_stock,insert_date) VALUES(?,?,?,?)";
 
-	public void cerateInfo(String itemName,String itemPrice,String itemStock)
+	public int cerateInfo(String itemName,String itemPrice,String itemStock)
 			throws SQLException{
+		int count = 0; //countという受け皿作った
 
 		try{
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
@@ -23,12 +24,13 @@ public class ItemCreateCompleteDAO {
 			preparedStatement.setString(2,itemPrice);
 			preparedStatement.setString(3,itemStock);
 			preparedStatement.setString(4,dateUtil.getDate());
-			preparedStatement.execute();
+			count = preparedStatement.executeUpdate(); //処理件数をcountに入れる
 		}catch(Exception e){
 			e.printStackTrace();
 		}finally{
 			connection.close();
 		}
+		return count;
 
 	}
 

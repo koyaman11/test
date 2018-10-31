@@ -16,9 +16,7 @@ public class ItemListDAO {
 	public ArrayList<ItemListDTO> getItemListInfo() throws SQLException{
 		ArrayList<ItemListDTO> itemListDTO=new ArrayList<ItemListDTO>();
 		String sql=
-				"SELECT ubit.item_name,ubit.item_price,ubit.item_stock,ubit.insert_date,ubit.id  FORM item_info_transaction ubit"
-				+ "JEFT JOIN login_user_transaction iit"
-				+ " ORDER BY insert_date DESC";
+				"SELECT item_name,item_price,item_stock,insert_date FROM item_info_transaction";
 
 		try{
 			PreparedStatement preparedStatement=connection.prepareStatement(sql);
@@ -26,10 +24,9 @@ public class ItemListDAO {
 
 			while(resultSet.next()){
 				ItemListDTO dto=new ItemListDTO();
-				dto.setId(resultSet.getString("id"));
 				dto.setItemName(resultSet.getString("item_name"));
-				dto.setItemPrice(resultSet.getString("item_price"));
-				dto.setItemStock(resultSet.getString("item_stock"));
+				dto.setItemPrice(resultSet.getInt("item_price"));
+				dto.setItemStock(resultSet.getInt("item_stock"));
 				dto.setInsert_date(resultSet.getString("insert_date"));
 				itemListDTO.add(dto);
 			}
@@ -40,22 +37,6 @@ public class ItemListDAO {
 		}
 		return itemListDTO;
 	}
-	//
-	//public int itemHistoryDelete
-	//(String item_name)throws SQLException{
-	//	String sql="DELETE FROM item_info_transaction WHERE item_name=?";
-//
-	//	PreparedStatement preparedStatement;
-		//int result=0;
-	  // try{
-	//	   preparedStatement=connection.prepareStatement(sql);
-	//	   result=preparedStatement.executeUpdate();
-	 //  }catch(SQLException e){
-	//	   e.printStackTrace();
-	 //  }finally{
-	//	   connection.close();
-	 //  }
-	  // return result;
-//	}
+
 
 }
