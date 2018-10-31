@@ -6,7 +6,6 @@ INDEX VERSION 1.3+C:\Users\internousdev\Desktop\workspace\workspace-koyama\test\
 1551011990.index
 1549101164.index
 3161850350.index
-2834923568.index
 2954435591.index
 2071576447.index
 2795787554.index

@@ -21,16 +21,19 @@ public class MyPageAction extends ActionSupport implements SessionAware{
 		if(!session.containsKey("id")){
 			return ERROR;
 		}
+		//履歴消去されたかチェック(itemlistdeletecomplete)
 		if(deleteFlg==null){
 			String item_transaction_id=session.get("id").toString();
 			String user_master_id=session.get("login_user_id").toString();
-			myPageList=myPageDAO.getMyPageUserInfo(item_transaction_id, user_master_id);
+			myPageList=myPageDAO.getMyPageUserInfo(item_transaction_id, user_master_id);//myPageListに格納する
+		//商品を消去する場合
 		}else if(deleteFlg.equals("1")){
 			delete();
 		}
 		String result=SUCCESS;
 		return result;
 	}
+	//履歴消去を行うﾒｿﾞｯﾄ(itemlistdeleteconfiem)
 	public void delete() throws SQLException{
 		String item_transaction_id=session.get("id").toString();
 		String user_master_id=session.get("login_user_id").toString();

@@ -1,0 +1,15 @@
+127.0.0.1 - - [29/Oct/2018:11:44:12 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:11:44:15 +0900] "GET /Ecsite/buyItemConfirm.jsp HTTP/1.1" 200 2075
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:11:44:31 +0900] "GET /Ecsite/itemListCreate.jsp HTTP/1.1" 200 1587
+127.0.0.1 - - [29/Oct/2018:15:47:55 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:15:47:56 +0900] "GET /Ecsite/WEB-INF/classes/com/internousdev/ecsite/dao/ItemListDAO.java HTTP/1.1" 404 1017
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:15:52:28 +0900] "GET /Ecsite/itemList.jsp HTTP/1.1" 200 1819
+127.0.0.1 - - [29/Oct/2018:16:40:48 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:16:40:51 +0900] "GET /Ecsite/ HTTP/1.1" 200 1762
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:16:40:54 +0900] "POST /Ecsite/AdminAction.action HTTP/1.1" 200 2094
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:16:42:12 +0900] "POST /Ecsite/AdminAction.action HTTP/1.1" 200 2094
+127.0.0.1 - - [29/Oct/2018:16:42:51 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:16:42:53 +0900] "GET /Ecsite/itemCreate.jsp HTTP/1.1" 200 1947
+127.0.0.1 - - [29/Oct/2018:16:43:42 +0900] "GET / HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:16:43:45 +0900] "GET /Ecsite/itemList.jsp HTTP/1.1" 200 1819
+0:0:0:0:0:0:0:1 - - [29/Oct/2018:16:43:49 +0900] "POST /Ecsite/ItemListDeleteConfirmAction HTTP/1.1" 200 3467

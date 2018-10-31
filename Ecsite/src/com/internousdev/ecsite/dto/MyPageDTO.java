@@ -1,6 +1,7 @@
 package com.internousdev.ecsite.dto;
 
 public class MyPageDTO {
+	//変数宣言
 	public String itemName;
 	public String totalPrice;
 	public String totalCount;
@@ -9,6 +10,7 @@ public class MyPageDTO {
 	public String id;
 	public String insert_date;
 
+	//getter setter定義
 	public String getItemName(){
 		return itemName;
 	}

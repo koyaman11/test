@@ -13,6 +13,7 @@ public class MyPageDAO {
 	private DBConnector dbConnector=new DBConnector();
 	private Connection connection=dbConnector.getConnection();
 
+	//DBから購入履歴を取得するためのメゾット
 	public ArrayList<MyPageDTO> getMyPageUserInfo
 	(String item_transaction_id,String user_master_id) throws SQLException{
 		ArrayList<MyPageDTO> myPageDTO=new ArrayList<MyPageDTO>();
@@ -28,6 +29,7 @@ public class MyPageDAO {
 			preparedStatement.setString(2, user_master_id);
 			ResultSet resultSet=preparedStatement.executeQuery();
 
+			//取得した結果一軒ずつDTOに格納、更にDTOをArrayListに格納(ietmlist)
 			while(resultSet.next()){
 				MyPageDTO dto=new MyPageDTO();
 				dto.setId(resultSet.getString("id"));
@@ -45,6 +47,7 @@ public class MyPageDAO {
 		}
 		return myPageDTO;
 	}
+	//DB殻購入履歴削除するためのメゾット(itemlistdeletecomplete)
 	public int buyItemHistoryDelete(String item_transaction_id,String user_master_id)throws SQLException{
 		String sql=
 			"DELETE FROM user_buy_item_transaction "
@@ -63,6 +66,7 @@ public class MyPageDAO {
 			connection.close();
 		}
 		return result;
+		//Actionに消去した件数を返す
 
 	}
 

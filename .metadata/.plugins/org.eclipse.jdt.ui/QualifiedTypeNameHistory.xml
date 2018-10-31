@@ -10,4 +10,6 @@
 <fullyQualifiedTypeName name="com.internousdev.template2.dto.BuyItemDTO"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.internousdev.ecsite.dao.ItemListDeleteCompleteDAO"/>
+<fullyQualifiedTypeName name="com.internousdev.ecsite.dto.ItemListDeleteCompleteDTO"/>
 </qualifiedTypeNameHistroy>
