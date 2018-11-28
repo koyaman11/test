@@ -47,11 +47,6 @@ height:500px;
 text-align:center;
 }
 
-
-
-
-
-
 #footer{
 width:100%;
 height:80px;
@@ -59,11 +54,32 @@ background-color:black;
 clear:both;
 }
 
-#text-center{
+.box_adimin{
+    text-align: center;
+    width: 60%;
+    height: 50%;
+ }
+.text-center-left{
 displey:inline-block;
 text-align:center;
+float: right;
 wigth:60px;
 hight:60px;
+padding:0.5em 1em;
+margin:2em 0;
+font-weight: bold;
+color:#6091d3;/*文字色*/
+background:#FFF;
+border:solid 3px #6091d3; /*線*/
+border-radius: 10px; /*角野丸み*/
+}
+.text-center-right{
+displey:inline-block;
+text-align:center;
+float: right;
+wigth:60px;
+hight:60px;
+margin-right: 4px;
 padding:0.5em 1em;
 margin:2em 0;
 font-weight: bold;
@@ -84,43 +100,36 @@ border-radius: 10px; /*角野丸み*/
 </head>
 <body>
 
-<div id="header">
-<div id="pr">
-</div>
-</div>
-<div id="main">
-<div id="top">
-<p>管理者画面</p>
-</div>
-<div>
+	<div id="header">
+		<div id="pr">
+		</div>
+	</div>
+	<div id="main">
+		<div id="top">
+			<p>管理者画面</p>
+		</div>
+		<div class=box_adimin>
+			<div class="text-center-left">
+				<p>商品</p>
+ 					<p><s:form action="ItemCreateAction">
+ 						<s:submit value="新規登録"/>
+ 					</s:form><br>
+ 						<s:form action="ItemListAction">
+ 						<s:submit value="一覧"/>
+ 						</s:form>
+			</div>
+		<div class="text-center-right">
+			<p>ユーザー</p>
+			<p><s:form action="UserCreateAction">
+ 				<s:submit value="新規登録"/>
+ 			</s:form><br>
+			<s:form action="UserListAction">
+ 				<s:submit value="一覧"/>
+			 </s:form>
+		</div>
+	</div>
+	</div>
 
-<div id="text-center">
-<tr>
- <td>商品</td>
- <td><s:form action="ItemCreateAction">
- <s:submit value="新規登録"/>
- </s:form></td>
-
- <td><s:form action="ItemListAction">
- <s:submit value="一覧"/>
- </s:form></td>
-</tr>
-</div>
-
-<div id="text-center">
-<p>ユーザー</p>
-<p><s:form action="UserCreateAction">
- <s:submit value="新規登録"/>
- </s:form><p>
-<p><s:form action="UserListAction">
- <s:submit value="一覧"/>
- </s:form><p>
-
-</div>
-
-
-</div>
-</div>
 
 <div id="footer">
 <div id="pr">
